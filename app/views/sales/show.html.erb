@@ -1,0 +1,40 @@
+<center>
+  <br>
+  <h1>Código venta: <%= @sale.cod %></h1>
+  <br>
+</center>
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+    <div class="row">
+    </div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Categoria</th>
+            <td><%= @sale.category %></td>
+          </tr>
+          <tr>
+            <th scope="row">Detalle</th>
+            <td><%= @sale.detail %></td>
+          </tr>
+          <tr>
+            <th scope="row">Valor</th>
+            <td><%= @sale.value %></td>
+          </tr>
+          <tr>
+            <th scope="row">Descuento</th>
+            <td><%= @sale.discount %></td>
+          </tr>
+          <tr>
+            <th scope="row">Impuesto</th>
+            <td><%= @sale.tax %></td>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <td><%= @sale.total %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    <%= link_to 'Volver', sales_path, class: 'btn btn-lg btn-primary' %>
