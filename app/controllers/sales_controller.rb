@@ -16,6 +16,7 @@ class SalesController < ApplicationController
     end
     @sale.save
     redirect_to sales_path
+    flash[:notice] = 'El registro fue almacenado con éxito!'
   end
 
   def show
